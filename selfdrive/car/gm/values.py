@@ -6,7 +6,7 @@ class CarControllerParams():
   STEER_MAX = 300  # Safety limit, not LKA max. Trucks use 600.
   STEER_STEP = 2  # control frames per command
   STEER_DELTA_UP = 7          # ~0.75s time to peak torque (255/50hz/0.75s)
-  STEER_DELTA_DOWN = 11       # ~0.3s from peak torque to zero
+  STEER_DELTA_DOWN = 12       # ~0.3s from peak torque to zero
   MIN_STEER_SPEED = 3.  # m/s
   STEER_DRIVER_ALLOWANCE = 50
   STEER_DRIVER_MULTIPLIER = 4
