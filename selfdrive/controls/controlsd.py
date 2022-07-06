@@ -47,7 +47,7 @@ IGNORE_PROCESSES = {"rtshield", "uploader", "deleter", "loggerd", "logmessaged",
 
 ACTUATOR_FIELDS = set(car.CarControl.Actuators.schema.fields.keys())
 
-MIN_CURVE_SPEED = 45. * CV.KPH_TO_MS
+MIN_CURVE_SPEED = 36. * CV.KPH_TO_MS
 
 ThermalStatus = log.DeviceState.ThermalStatus
 State = log.ControlsState.OpenpilotState
