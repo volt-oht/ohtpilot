@@ -59,7 +59,7 @@ class CarInterface(CarInterfaceBase):
     ret.enableCamera = is_ecu_disconnected(fingerprint[0], FINGERPRINTS, ECU_FINGERPRINT, candidate, Ecu.fwdCamera) or has_relay
     ret.openpilotLongitudinalControl = ret.enableCamera
 
-    tire_stiffness_factor = 0.444  # not optimized yet
+    tire_stiffness_factor = 0.469
 
     # for autohold on ui icon
     ret.enableAutoHold = 241 in fingerprint[0]
@@ -88,7 +88,7 @@ class CarInterface(CarInterfaceBase):
       ret.lateralTuning.pid.kiV, ret.lateralTuning.pid.kpV = [[0.0175], [0.185]]
       tire_stiffness_factor = 0.469 # Stock Michelin Energy Saver A/S, LiveParameters
       ret.steerRatioRear = 0.
-      ret.centerToFront = ret.wheelbase * 0.45  # wild guess
+      ret.centerToFront = ret.wheelbase * 0.49  # wild guess
       ret.lateralTuning.pid.kf = 1. # get_steer_feedforward_volt()
       ret.steerActuatorDelay = 0.225
 
