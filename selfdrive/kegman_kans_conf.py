@@ -54,7 +54,7 @@ class kegman_kans_conf():
         self.element_updated = True
 
       if "STOPPING_DISTANCE" not in self.config:
-        self.config.update({"STOPPING_DISTANCE":"0.8"})
+        self.config.update({"STOPPING_DISTANCE":"1.0"})
         self.element_updated = True
 
       if "deadzone" not in self.config:
@@ -98,7 +98,7 @@ class kegman_kans_conf():
          "battPercOff":"50", "carVoltageMinEonShutdown":"12000", \
          "steerLimitTimer":"3.9", "tuneGernby":"1", "AutoHold":"1", \
          "Kp":"0.185", "Ki":"0.095", "Kf":"1.00004", "steerMax":"3.5", \
-         "STOPPING_DISTANCE":"0.8", "CruiseDelta":"5", "CruiseEnableMin":"10", \
+         "STOPPING_DISTANCE":"1.0", "CruiseDelta":"5", "CruiseEnableMin":"10", \
          "liveParams":"1", "deadzone":"0.0", \
          "epsModded": "0", "CAMERA_SPEED_FACTOR":"0.98"}
 
